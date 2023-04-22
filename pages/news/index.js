@@ -1,7 +1,12 @@
 import React from "react";
 
 const News = ({ data }) => {
-  return <h1 className="content">{data}</h1>;
+  return (
+    <>
+      <span>Analytic key is {process.env.NEXT_PUBLIC_ANALYTIC_ID}</span>
+      <h1 className="content">{data}</h1>
+    </>
+  );
 };
 
 export default News;
